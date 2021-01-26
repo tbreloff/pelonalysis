@@ -64,6 +64,12 @@ def barh_by_group(data, field='Fitness Discipline', **plot_args):
     """
     data.groupby(field).count()['Workout Timestamp'].sort_values().plot.barh(**plot_args);
 
+def minutes_barh_by_group(data, field='Fitness Discipline', **plot_args):
+    """
+    Show a sorted horizontal bar blot for the number of workouts by each category in the 'field' column
+    """
+    data.groupby(field)['Length (minutes)'].sum().sort_values().plot.barh(**plot_args);
+
 def plot_workouts_vs_ftp(data, figsize=(15,15), **plot_args):
     """
     this is a cycling-focused plot showing both your weekly cycling output and total minutes (across all workouts)
