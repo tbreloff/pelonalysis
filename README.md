@@ -2,7 +2,7 @@
 
 This is a very limited set of analytics for Peloton data.  I made this primarily to analyze weekly effort to understand the effect on my performance. Use at your own risk.  I likely won't maintain this repo... sorry!
 
-## Checkout this website
+## Checkout this repo
 
 ```
 cd /path/to/src
